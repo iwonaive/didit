@@ -1,6 +1,11 @@
 <div>
-  <button>
-    <img src="" alt="" />
-    <span>{{ selectedList.id }}</span>
+  <button (click)="onSelectedList()">
+    <img [src]="imagePath()" [alt]="selectedList().name" />
+    <span>{{ selectedList().id }}</span>
   </button>
 </div>
+
+<!-- wali błędem: 
+ERROR RuntimeError: NG04002: Cannot match any routes. URL Segment: 'assets/photo/simple-logo'
+no idea co to - usunęłam zdjęcie -->
+<!-- po dodaniu signalsow nie ma bledu ale nadal nie wyswietla ikonki -->

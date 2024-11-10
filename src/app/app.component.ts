@@ -6,7 +6,7 @@ import { DiditListComponent } from './didit-list/didit-list.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, DiditListComponent],
+  imports: [HeaderComponent, DiditListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
